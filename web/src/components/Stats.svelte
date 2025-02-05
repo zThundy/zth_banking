@@ -140,6 +140,7 @@
       },
       options: {
         responsive: true,
+        maintainAspectRatio: false,
         plugins: {
           legend: {
             display: true,
@@ -260,7 +261,7 @@
           <i class="fa-duotone fa-chart-line text-blue-400 text-2xl"></i>
         </div>
         <div
-          class="relative w-[90%] m-auto"
+          class="relative w-[90%] m-auto min-h-[50vh]"
           in:scale={{ duration: 2500, easing: quintOut }}
         >
           <canvas id="transactionChart"></canvas>
